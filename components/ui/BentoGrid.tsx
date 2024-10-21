@@ -1,12 +1,9 @@
-"use client";
-
+"use client"
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import { GridGlobe } from "./GridGlobe";
-import { div } from "framer-motion/client";
 import { leftTech, rightTech } from "@/data";
 import Lottie from "react-lottie";
-import { loop } from "three/webgpu";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
@@ -69,7 +66,7 @@ export const BentoGridItem = ({
       style={{
         background: "rgb(2,0,36)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,68,1) 26%, rgba(93,108, 111,1) 100% ",
+          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,68,1) 26%, rgba(93,108,111,1) 100%)",
       }}
     >
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -78,7 +75,7 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover, object-center")}
+              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>

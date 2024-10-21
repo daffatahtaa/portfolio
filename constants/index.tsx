@@ -6,7 +6,7 @@ import { TbMailFast } from "react-icons/tb";
 export const navLink = [
   {
     name: "Home",
-    link: "/",
+    link: "",
     // icon: <FaHome />,
   },
   {
