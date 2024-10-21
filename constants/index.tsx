@@ -7,26 +7,26 @@ export const navLink = [
   {
     name: "Home",
     link: "/",
-    icon: <FaHome />,
+    // icon: <FaHome />,
   },
   {
     name: "About",
     link: "#about",
-    icon: <SiAboutdotme />,
+    // icon: <SiAboutdotme />,
   },
   {
     name: "Projects",
     link: "#projects",
-    icon: <FaFileArchive />,
+    // icon: <FaFileArchive />,
   },
   {
     name: "Testimonials",
     link: "#testimonials",
-    icon: <CiFaceSmile />,
+    // icon: <CiFaceSmile />,
   },
   {
     name: "Contact",
     link: "#contact",
-    icon: <TbMailFast />,
+    // icon: <TbMailFast />,
   },
 ];
