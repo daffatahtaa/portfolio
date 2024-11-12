@@ -72,11 +72,11 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
+      title: "Labuchi - Company Profile",
+      des: "A company profile for Local Business based in Bandung, Indonesia",
+      img: "/p_labuchi.jpeg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "/ui.earth.com",
+      link: "/labuchi",
     },
     {
       id: 2,

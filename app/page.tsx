@@ -3,8 +3,6 @@ import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavBar";
 import { navLink } from "@/constants";
-import Image from "next/image";
-import Contacts from "../components/Contact";
 
 export default function Home() {
   return (
@@ -14,7 +12,7 @@ export default function Home() {
         <Hero />
         <Grid />
         <RecentProjects />
-        <Contacts />
+        {/* <Contacts /> */}
       </div>
     </main>
   );
