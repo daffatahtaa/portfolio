@@ -33,7 +33,7 @@ const Hero = () => {
               words="Transforming Concepts into Seamless User Experiences"
             />
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-              Hi, I&apos;m Daffa, a Next.js Developer based in Indonesia.
+              Hi 👋, I&apos;m Daffa, a Web/Software/Hardware Developer based in Indonesia.
             </p>
             <a href="#about"> <MagicButton title="Show my Work"  icon={<FaLocationArrow />} position="right"/></a>
           </div>
