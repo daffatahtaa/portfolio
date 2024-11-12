@@ -1,0 +1,715 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+.menu-icon {
+  width: 70px;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #fe6601;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.col-1 {
+  flex-basis: 30%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.col-1 h2 {
+  font-size: 54px;
+}
+
+.col-1 h4 {
+  font-weight: 100;
+  font-size: 25px;
+  margin: 20px 0 10px;
+}
+
+.col-2 {
+  position: relative;
+  flex-basis: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.col-2 .home-labu {
+  width: 90%;
+}
+
+.col-2 .color-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(#ff6600, #e98341, #fe9641);
+  border-radius: 20px 0px 0px 20px;
+  height: 100%;
+  width: 80%;
+  z-index: -1;
+  transform: translateX(190px);
+  /* overflow: hidden; */
+  /* transform: translateY(0px); */
+}
+
+.col-2 .pesan-sekarang-btn img {
+  width: 80px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.col-2 .pesan-sekarang-btn {
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  margin-left: -10%;
+}
+
+.socials img {
+  height: 30px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.col-1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.col1 a:visited {
+  color: black;
+}
+
+.col-1-a-1 {
+  font-size: 20px;
+  margin-top: 10%;
+  border: 1px solid orange;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.socials {
+  /* margin-top: 40%; */
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.col-1-tentangkami {
+  flex-basis: 100%;
+  position: relative;
+  margin-left: 40px;
+}
+
+.col-1-produk {
+  flex-basis: 100%;
+  position: relative;
+  margin-top: -25px;
+  /* margin-left: 40px; */
+}
+
+/* .wrapper-produk {
+  width: 100%;
+} */
+
+.col-1-produk h4 {
+  font-weight: 100;
+}
+
+.container-produk {
+  width: 100%;
+  height: 41vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box-produk {
+  width: 300px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 10px;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.slide-image-produk {
+  height: 450px;
+  position: relative;
+}
+
+.slide-image-produk img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.box-produk a {
+  text-decoration: none;
+}
+
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  /* font-family: calibri; */
+}
+
+.type-produk {
+  display: flex;
+  flex-direction: column;
+}
+
+.type-produk a {
+  color: #222222;
+  margin: 5px, 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+
+.type-produk span {
+  margin-top: 5px;
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.harga-produk {
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  /* font-family: poppins; */
+  letter-spacing: 0.5px;
+}
+
+.detail-box a {
+  cursor: context-menu;
+}
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(92, 95, 236, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-buy {
+  display: flex;
+  width: 160px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #252525;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  /* font-family: calibri; */
+  border-radius: 10px;
+  box-shadow: 2px, 2px, 30px, rgba(0, 0, 0, 0.2);
+}
+
+.btn-buy:hover {
+  color: white;
+  background-color: rgb(247, 153, 47);
+  transition: all ease 0.3s;
+}
+
+.overlay {
+  visibility: hidden;
+}
+
+.slide-image-produk:hover .overlay {
+  visibility: visible;
+  animation: fade 0.5s;
+}
+
+figure {
+  display: flex;
+  margin: 1.5em;
+  padding: 0.7em;
+}
+
+.glider-next {
+  right: -50px;
+}
+
+.glider-prev {
+  left: -50px;
+}
+
+.slider-container {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -50px;
+  position: relative;
+}
+
+.glider {
+  padding: 20px 0px;
+}
+
+.container-kontak {
+  width: 100%;
+  /* min-height: 100vh; */
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+}
+
+.main-kontak {
+  flex-basis: 50%;
+  /* float: left; */
+  padding-left: 8%;
+}
+
+.main-kontak p {
+  margin-top: 2%;
+}
+
+.row-kontak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.col-1-kontak {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 4%;
+}
+
+.col-2-kontak {
+  position: relative;
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.col-2-kontak img {
+  width: 80%;
+  height: 100%;
+  object-fit: none;
+  box-sizing: border-box;
+}
+.image-container-kontak {
+  height: 450px;
+  position: relative;
+}
+
+.another-container {
+  width: 60%;
+}
+
+.another-container a {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.another-container ul li {
+  list-style-type: none;
+}
+.another-container li {
+  margin-top: 4%;
+}
+
+.another-container ul {
+  margin-top: 5%;
+}
+
+.whatsapp {
+  width: 100%;
+  /* background-color: #61ce70; */
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: #61ce70;
+}
+
+.kontak-instagram {
+  width: 100%;
+  /* background-color: #61ce70; */
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+}
+
+.another-container a:visited {
+  color: white;
+}
+
+.email a {
+  font-size: 20px;
+  margin-top: 6%;
+  pointer-events: none;
+  color: black;
+}
+
+.email-email {
+  text-align: center;
+}
+
+.row-tentangkami {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.row-reseller {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  /* margin: 100px 0; */
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  margin: 5px 0;
+}
+
+th {
+  margin-left: 50%;
+}
+
+td {
+  text-align: center;
+}
+
+.col-1-faq {
+  flex-basis: 100%;
+}
+
+.faq-table th {
+  padding-top: 15px;
+  text-align: left;
+}
+
+.faq-table td {
+  text-align: left;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1042px) {
+  nav ul {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff6600, #e98341, #fe9641);
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .socials {
+    /* margin-top: 90%; */
+    text-align: center;
+    margin-bottom: 10%;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff6600, #e98341, #fe9641);
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+
+  .row-tentangkami {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .col-2 .pesan-sekarang-btn {
+    margin-left: -10%;
+    font-size: 20px;
+  }
+
+  .col-2 .pesan-sekarang-btn img {
+    width: 60px;
+  }
+
+  .socials {
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
+  .col-2 .color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ff6600, #e98341, #fe9641);
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    /* transform: translateX(190px); */
+    /* overflow: hidden; */
+    /* transform: translateY(0px); */
+  }
+  .col-2 .home-labu {
+    width: 90%;
+    align-items: center;
+    transform: translateX(30px);
+  }
+  .row .col-1 {
+    align-items: baseline;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .row-kontak {
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  .col-2-kontak img {
+    margin-left: 20%;
+    margin-right: 20%;
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .container-kontak-2 {
+    text-align: justify;
+    display: block;
+  }
+
+  .image-container-kontak {
+    transform: translateX(-16%);
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  nav ul {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff6600, #e98341, #fe9641);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .logo {
+    width: 35px;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .col-2 .color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ff6600, #e98341, #fe9641);
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    /* transform: translateX(190px); */
+    /* overflow: hidden; */
+    /* transform: translateY(0px); */
+  }
+
+  .col-2 .pesan-sekarang-btn p {
+    font-size: 15px;
+  }
+
+  .col-2 .pesan-sekarang-btn img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .col-2 .pesan-sekarang-btn {
+    margin-left: -5%;
+  }
+
+  .col-2 .color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ff6600, #e98341, #fe9641);
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(110px);
+    /* overflow: hidden; */
+    /* transform: translateY(0px); */
+  }
+
+  .another-container {
+    width: 80%;
+  }
+
+  .image-container-kontak img {
+    margin-top: 15%;
+    height: 250px;
+    width: 250px;
+    vertical-align: middle;
+  }
+
+  .slider-container {
+    margin-top: 5%;
+  }
+
+  .glider-next {
+    display: none;
+  }
+  .glider-prev {
+    display: none;
+  }
+}

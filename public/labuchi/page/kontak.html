@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak</title>
+    <link rel="stylesheet" href="../stylesheet.css" />
+    <link rel="shortucut icon" href="../image/logo.png" />
+  </head>
+  <body>
+    <div class="container-kontak">
+      <div class="navbar">
+        <img src="../image/logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="tentangkami.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+
+            <li><a href="reseller.html">Reseller</a></li>
+            <li>
+              <a href="ketentuan.html">Ketentuan</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="../image/menu.png" class="menu-icon" onclick="toggleMenu()" />
+      </div>
+    </div>
+
+    <div class="container-kontak-2">
+      <div class="row-kontak">
+        <div class="col-1-kontak">
+          <div class="main-kontak">
+            <h2>Kontak Labuchimahi</h2>
+            <p>
+              Apabila anda membutuhkan informasi seputar Labucimahi <br />
+              silahkan langsung klik salah satu tombol di bawah. <br />
+              Untuk pemesanan harap hubungi Whatsapp
+            </p>
+            <div class="another-container">
+              <ul>
+                <li class="whatsapp">
+                  <a href="https://wa.me/+6287832234352" target="_blank"
+                    >Chat Whatsapp</a
+                  >
+                </li>
+                <li class="kontak-instagram">
+                  <a href="https://instagram.com/labu.chi" target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="email">
+                  <p>Atau kirim email ke</p>
+                  <a href="labucimahi@gmail.com" class="email-email"
+                    >labucimahi@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-2-kontak">
+          <div class="image-container-kontak">
+            <a href="../image/labuchi.png" target="_blank">
+              <img src="../image/labuchi.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

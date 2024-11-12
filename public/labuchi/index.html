@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="shortucut icon" href="../image/logo.png" />
+
+    <title>labuchi</title>
+  </head>
+  <body style="overflow: hidden">
+    <div class="container">
+      <div class="navbar">
+        <img src="image/logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="page/tentangkami.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="page/produk.html">Produk</a>
+            </li>
+            <li><a href="page/reseller.html">Reseller</a></li>
+            <li>
+              <a href="page/ketentuan.html">Ketentuan</a>
+            </li>
+            <li>
+              <a href="page/faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="page/kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="image/menu.png" class="menu-icon" onclick="toggleMenu()" />
+      </div>
+
+      <div class="row">
+        <div class="col-1">
+          <h2>Labuchi</h2>
+          <h4>
+            Olahan Labu oleh Roemah Labu <br />
+            Sehatnya dapat, Rasanya mantap!
+          </h4>
+          <a href="/page/produk.html" class="col-1-a-1">Lihat produk</a>
+        </div>
+        <div class="col-2">
+          <img src="image/home-labu.png" class="home-labu" />
+          <div class="color-box"></div>
+          <div class="pesan-sekarang-btn">
+            <!-- <img src="image/shopcart.png" alt="shopcart" /> -->
+            <!-- <i class="fas fa-shopping-cart"></i> -->
+            <a href="page/carapesan.html"
+              ><img
+                src="https://img.icons8.com/ios/96/000000/shopping-basket.png"
+            /></a>
+            <p><small>Pesan Sekarang</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/labu.chi/">
+          <img src="image/icons8-instagram-64.png" class="instagram" />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

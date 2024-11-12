@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortucut icon" href="../image/logo.png" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../stylesheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="../image/logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="tentangkami.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+
+            <li><a href="reseller.html">Reseller</a></li>
+            <li>
+              <a href="ketentuan.html">Ketentuan</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="../image/menu.png" class="menu-icon" onclick="toggleMenu()" />
+      </div>
+      <div class="row">
+        <div class="col-1-petasitus">
+          <h2>FAQ Seputar</h2>
+          <h3>Labuchi</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-faq">
+          <p>
+            Berikut ini beberapa pertanyaan seputar
+            <strong>Labucimahi</strong> yang sering diajukan oleh para
+            pengunjung website, apabila pertanyaan Anda belum terwakili silahkan
+            kirim melalui kolom komentar atau melalui menu Kontak.
+            <br />
+            <br />
+          </p>
+          <table class="faq-table">
+            <tr>
+              <th>Apakah ada minimum pembelian untuk ritel?</th>
+              <td>Tidak ada, satupun Kami layani.</td>
+            </tr>
+            <tr>
+              <th>Bagaimana cara memesan <strong>Labuchi</strong>?</th>
+              <td>Silahkan baca informasi detilnya di menu</td>
+            </tr>
+            <tr>
+              <th>Bagaimana cara menjadi Reseller?</th>
+              <td>
+                Untuk mendapatkan informasi mengenai syarat dan ketentuan
+                berikut jumlah pesanan dan harga reseller silahkan baca detilnya
+                di menu <a href="reseller.html"><strong>Reseller.</strong></a>
+              </td>
+            </tr>
+            <tr>
+              <th>Bagaimana cara pembayarannya?</th>
+              <td>
+                Kami hanya menerima pembayaran melalui transfer bank. Untuk
+                mengetahui informasi lebih lengkap mengenai bank dan nomor
+                rekening silahkan lihat di menu
+                <a href="kontak.html"><strong>Kontak.</strong></a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                Apakah pembayaran dapat dilakukan setelah barang di terima?
+              </th>
+              <td>Tidak bisa. Bayar terlebih dahulu baru barang di terima.</td>
+            </tr>
+            <tr>
+              <th>Jasa pengiriman apa saja yang digunakan?</th>
+              <td>
+                Untuk pembelian retail Kami menggunakan jasa JNE/TIKI/Pos
+                Indonesia, namun untuk pembelian dalam jumlah besar Kami
+                menggunakan jasa pengiriman Dacota Cargo.
+              </td>
+            </tr>
+            <tr>
+              <th>Apakah bukti pembayaran harus di fax atau di email?</th>
+              <td>
+                Tidak perlu, Anda cukup konfirmasi melalui SMS/BBM/WhatsApp.
+                Setelah Anda mengirim Kami akan cek pembayaran Anda melalui
+                internet banking.
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- <div class="socials">
+        <a href="https://www.instagram.com/labu.chi/">
+          <img src="image/icons8-instagram-64.png" class="instagram" />
+        </a>
+      </div> -->
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

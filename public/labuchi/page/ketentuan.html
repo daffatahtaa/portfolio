@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesheet.css" />
+    <link rel="shortucut icon" href="../image/logo.png" />
+    <title>Ketentuan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="../image/logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="tentangkami.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+
+            <li><a href="reseller.html">Reseller</a></li>
+            <li>
+              <a href="ketentuan.html">Ketentuan</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="../image/menu.png" class="menu-icon" onclick="toggleMenu()" />
+      </div>
+      <div class="row">
+        <div class="col-1-petasitus">
+          <h2>Ketentuan Beli di <strong>Labuchi</strong></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-petasitus" style="font-size: 20px">
+          <ol>
+            <li>
+              Tidak ada minimum pembelian untuk pembelanjaan ritel. Untuk
+              pembelanjaan reseller silahkan baca detilnya di menu
+              <strong>
+                <a href="reseller.html" style="text-decoration: none"
+                  >Reseller</a
+                ></strong
+              >.
+            </li>
+            <li>
+              Pembayaran saat ini hanya melalui transfer, detil cara pemesanan
+              silahkan baca detilnya di menu
+              <strong>
+                <a href="kontak.html" style="text-decoration: none"
+                  >Kontak</a
+                ></strong
+              >.
+            </li>
+            <li>
+              Pesanan akan dikirim apabila sudah dibayar lunas oleh pemesan.
+            </li>
+            <li>
+              Ongkos kirim sepenuhnya ditanggung oleh pemesan dengan tarif
+              sesuai ketentuan ekspedisi yang dipakai.
+            </li>
+
+            <li>
+              Produk akan di kirim ke alamat yang sudah di berikan pemesan pada
+              saat order.
+            </li>
+            <li>
+              Kesalahan pemesan dalam memberikan alamat pada saat order sehingga
+              menyebakan produk tidak sampai atau tidak di terima bukan menjadi
+              tanggung jawab sambelmertua.com
+            </li>
+            <li>
+              Ketika produk sudah di kirim maka sepenuhnya menjadi tanggung
+              jawab jasa Expedisi yang di pilih konsumen dan bukan menjadi
+              tanggung jawab sambelmertua.com
+            </li>
+            <li>
+              Sambelmertua.com tidak bisa memberikan jaminan kepastian tanggal
+              produk akan di terima oleh pemesan atau kompensansi apapun akibat
+              keterlambatan yang mungkin terjadi karena hal tersebut menjadi
+              tanggung jawab jasa expedisi yang di pilih pemesan.
+            </li>
+            <li>
+              Setelah barang sampai pemesan di wajibkan untuk mengkonfirmasikan
+              kepada kami bawa produk pesanan anda telah anda terima dengan baik
+              dan kami juga dapat memastikan bawa produk yang kami kirim benar
+              benar sampai.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

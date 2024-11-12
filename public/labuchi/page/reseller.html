@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortucut icon" href="../image/logo.png" />
+    <link rel="stylesheet" href="../stylesheet.css" />
+    <title>Reseller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="../image/logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="tentangkami.html">Tentang Kami</a>
+            </li>
+            <li>
+              <a href="produk.html">Produk</a>
+            </li>
+
+            <li><a href="reseller.html">Reseller</a></li>
+            <li>
+              <a href="ketentuan.html">Ketentuan</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+              <a href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </nav>
+        <img src="../image/menu.png" class="menu-icon" onclick="toggleMenu()" />
+      </div>
+      <div class="row-reseller">
+        <div class="col-1-petasitus">
+          <h2>Reseller</h2>
+          <h3>Labuchi</h3>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          Reseller Labuchi adalah Seseorang yang membeli produk Labuchi kemudian
+          menjual kembali pada orang lain. Reseller Labuchi bisa dijadikan
+          pilihan bagi Anda yang tertarik untuk mendapatkan penghasilan tambahan
+          atau menjadikannya sebagai pekerjaan sampingan karena menjadi reseller
+          relatif bisa dilakukan oleh siapa saja (mahasiswa, pelajar, ibu rumah
+          tangga, pekerja dll) dan bisa disesuaikan dengan kemampuan modal yang
+          Anda miliki. Waktunya pun bisa flexible menyesuaikan dengan kondisi
+          Anda Selama Anda mau menjual, punya pasar atau mau mencari pasar,
+          punya selling skill atau mau mengasah selling skillnya, rajin dan ulet
+          tentu menjadi Reseller bisa menghasilkan penghasilan yang bisa
+          diandalkan.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-1-petasitus">
+          <p>Berikut adalah harga reseller Labuchi :</p>
+          <table>
+            <tr>
+              <th>Order</th>
+              <th>kuantitas</th>
+              <th>Harga</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td>30 pcs</td>
+              <td>
+                Rp. 10.000 <br />
+                + ongkir
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-petasitus">
+          <h2>Cara Pesan :</h2>
+          <br />
+          <p>
+            Silahkan menghubungi nomor Whatsapp atau ke halaman
+            <a href="kontak.html">Kontak</a>
+          </p>
+          <!-- <br /> -->
+          <div class="another-container">
+            <ul>
+              <li class="whatsapp">
+                <a href="https://wa.me/+6287832234352" target="_blank"
+                  >Chat Whatsapp</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="socials">
+        <a href="https://www.instagram.com/labu.chi/">
+          <img src="image/icons8-instagram-64.png" class="instagram" />
+        </a>
+      </div> -->
+    </div>
+
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
